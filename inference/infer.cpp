@@ -18,7 +18,7 @@ namespace multiverso { namespace lightlda
     class Infer
     {
     public:
-        static void Run(int argc, char** argv)
+        static void Run(int argc, const char** argv)
         {
             Log::ResetLogFile("LightLDA_infer." + std::to_string(clock()) + ".log");
             Config::Init(argc, argv);
@@ -170,7 +170,12 @@ namespace multiverso { namespace lightlda
 } // namespace multiverso
 
 
-int main(int argc, char** argv)
+
+#if defined(BUILD_MONOLITHIC)
+#define main    llda_infer_main
+#endif
+
+int main(int argc, const char** argv)
 {
     multiverso::lightlda::Config::inference = true;
     multiverso::lightlda::Infer::Run(argc, argv);

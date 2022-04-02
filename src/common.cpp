@@ -29,7 +29,7 @@ namespace multiverso { namespace lightlda
     int64_t Config::alias_capacity = 512 * kMB;
     // -- End: Config definition and default values ----------------------- //
 
-    void Config::Init(int argc, char* argv[])
+    void Config::Init(int argc, const char* argv[])
     {
         if (argc < 2)
         {

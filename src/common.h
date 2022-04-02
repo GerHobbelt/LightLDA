@@ -31,7 +31,7 @@ namespace multiverso { namespace lightlda
     {
     public:
         /*! \brief Inits configs from command line arguments */
-        static void Init(int argc, char* argv[]);
+        static void Init(int argc, const char* argv[]);
         /*! \brief size of vocabulary */
         static int32_t num_vocabs;
         /*! \brief number of topics */

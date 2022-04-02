@@ -17,7 +17,7 @@ namespace multiverso { namespace lightlda
     class LightLDA
     {
     public:
-        static void Run(int argc, char** argv)
+        static void Run(int argc, const char** argv)
         {
             Config::Init(argc, argv);
             
@@ -230,7 +230,12 @@ namespace multiverso { namespace lightlda
 } // namespace multiverso
 
 
-int main(int argc, char** argv)
+
+#if defined(BUILD_MONOLITHIC)
+#define main    llda_main
+#endif
+
+int main(int argc, const char** argv)
 {
     multiverso::lightlda::LightLDA::Run(argc, argv);
     return 0;

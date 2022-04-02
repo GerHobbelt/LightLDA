@@ -384,7 +384,12 @@ void load_global_tf(std::unordered_map<int32_t, int32_t>& global_tf_map,
     stream.close();
 }
 
-int main(int argc, char* argv[])
+
+#if defined(BUILD_MONOLITHIC)
+#define main    llda_dump_binary_main
+#endif
+
+int main(int argc, const char** argv)
 {
     if (argc != 5)
     {
