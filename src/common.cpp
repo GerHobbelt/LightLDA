@@ -6,7 +6,7 @@ namespace multiverso { namespace lightlda
 {
     const int64_t kMB = 1024 * 1024;
 
-    // -- Begin: Config definitioin and defalut values --------------------- //
+    // -- Begin: Config definition and default values --------------------- //
     int32_t Config::num_vocabs = -1;
     int32_t Config::num_topics = 100;
     int32_t Config::num_iterations = 100;
@@ -27,7 +27,7 @@ namespace multiverso { namespace lightlda
     int64_t Config::model_capacity = 512 * kMB;
     int64_t Config::delta_capacity = 256 * kMB;
     int64_t Config::alias_capacity = 512 * kMB;
-    // -- End: Config definitioin and defalut values ----------------------- //
+    // -- End: Config definition and default values ----------------------- //
 
     void Config::Init(int argc, char* argv[])
     {
@@ -69,7 +69,7 @@ namespace multiverso { namespace lightlda
         printf("LightLDA usage: \n");
         printf("-num_vocabs <arg>        Size of dataset vocabulary \n");
         printf("-num_topics <arg>        Number of topics. Default: 100\n");
-        printf("-num_iterations <arg>    Number of iteratioins. Default: 100\n");
+        printf("-num_iterations <arg>    Number of iterations. Default: 100\n");
         printf("-mh_steps <arg>          Metropolis-hasting steps. Default: 2\n");
         printf("-alpha <arg>             Dirichlet prior alpha. Default: 0.1\n");
         printf("-beta <arg>              Dirichlet prior beta. Default: 0.01\n\n");
@@ -96,7 +96,7 @@ namespace multiverso { namespace lightlda
         printf("LightLDA Inference usage: \n");
         printf("-num_vocabs <arg>        Size of dataset vocabulary \n");
         printf("-num_topics <arg>        Number of topics. Default: 100\n");
-        printf("-num_iterations <arg>    Number of iteratioins. Default: 100\n");
+        printf("-num_iterations <arg>    Number of iterations. Default: 100\n");
         printf("-mh_steps <arg>          Metropolis-hasting steps. Default: 2\n");
         printf("-alpha <arg>             Dirichlet prior alpha. Default: 0.1\n");
         printf("-beta <arg>              Dirichlet prior beta. Default: 0.01\n\n");
