@@ -10,7 +10,7 @@
 #include <string>
 
 #include "common.h"
-#include <multiverso/meta.h>
+//#include <multiverso/meta.h>
 
 namespace multiverso 
 { 
@@ -22,7 +22,7 @@ namespace lightlda
     class Meta;
     class Trainer;
 
-    /*! \brief interface for acceess to model */
+    /*! \brief interface for access to model */
     class ModelBase
     {
     public:
