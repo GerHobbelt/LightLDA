@@ -1,4 +1,4 @@
 [submodule "multiverso"]
 	path = multiverso
-	url = git@github.com:GerHobbelt/multiverso.git
+	url = https://github.com/GerHobbelt/multiverso.git
 	branch = master
